@@ -1,14 +1,16 @@
 /**
  * Main application routes
  */
-var errors = require('./components/errors');
-var cors = require('cors');
-var busboy = require('connect-busboy');
-var express = require('express');
-var Item = require('./controllers/item.controller');
-var Menu = require('./controllers/menu.controller');
-var Review = require('./controllers/review.controller');
-var User = require('./controllers/user.controller');
+var errors = require('./components/errors')
+    ,cors = require('cors')
+    ,busboy = require('connect-busboy')
+    ,express = require('express')
+    ,Item = require('./controllers/item.controller')
+    ,Menu = require('./controllers/menu.controller')
+    ,Review = require('./controllers/review.controller')
+    ,User = require('./controllers/user.controller')
+    ,request = require('supertest')
+    ,should = require('should')
 
 module.exports.applyRoutes = function(app) {
 
@@ -75,4 +77,5 @@ module.exports.applyRoutes = function(app) {
   app.route('/*').get(function(req, res) {
     res.sendfile(app.get('appPath') + '/index.html');
   });
+
 };
