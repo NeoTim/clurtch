@@ -12,7 +12,7 @@
     "google-maps",
     "ion-google-place",
     "app.modules",
-    "app.factories",
+    "app.models",
     "app.directives"
     ]);
 
