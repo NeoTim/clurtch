@@ -2,7 +2,7 @@ var neo4j = require('node-neo4j');
 var request = require('request');
 
 module.exports.db = db = new neo4j('http://neo4john.cloudapp.net:7474');
-module.exports.db = db = new neo4j('http://localhost:7474');
+// module.exports.db = db = new neo4j('http://localhost:7474');
 // module.exports.serif = require("seraph")('http://neo4john.cloudapp.net:7474');
 
 // // RUN A FEW TIMES TO INDEX ALL ITEMS INTO THE SPATIAL RTREE
