@@ -2,7 +2,7 @@
 run
 import
 platforms/^.*
-node_modules
+#node_modules
 assets/components
 www
 dist
