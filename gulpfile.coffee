@@ -170,8 +170,8 @@ destinations =
 
 options =
   open: gulp.env.open || process.env['OPEN'] || false # open the server in the browser on init?
-  httpPort: 4400
-  riddlePort: 4400
+  httpPort: 4400 || process.env.PORT
+  riddlePort: 4400 || process.env.PORT
 
 gulp.task 'compile:import', ->
   gulp.src(paths.import)
